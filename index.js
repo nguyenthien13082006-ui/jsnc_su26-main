@@ -8,7 +8,7 @@ console.log(age);
 // Kiểu dữ lieu
 // 1. String (chuỗi) : "hoadv", "javascript", 'hoadv' 
 // 2. Number (số)
-// 3. Boôlean (đúng hoặc sai)
+// 3. Boolean (đúng hoặc sai)
 let game = "Liên Quân";
 let year = 9;
 let isAdmin = true;
