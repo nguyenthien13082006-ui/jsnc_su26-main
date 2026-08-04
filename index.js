@@ -13,3 +13,6 @@ let game = "Liên Quân";
 let year = 9;
 let isAdmin = true;
 console.log(game);
+// alert('Free Fire sống dai thành huyền thoại');
+const h1 = document.getElementById('title').innerHTML = "Danh sách vật phẩm";
+console.log(h1);
