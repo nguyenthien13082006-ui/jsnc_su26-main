@@ -26,8 +26,6 @@ const user = {
     email: 'thien.nguyen@example.com',
     address: 'Hà Nội'
 };
-
-// In toàn bộ thông tin ra Console
 console.log(user);
 console.log("Họ tên:", user.name);
 console.log("Tuổi:", user.age);
