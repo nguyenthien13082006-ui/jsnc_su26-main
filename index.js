@@ -16,18 +16,22 @@ console.log(game);
 
 // alert('Free Fire sống dai thành huyền thoại');
 
-const h1 = document.getElementById('title').innerHTML = "Danh sách vật phẩm";
+const h1 = document.getElementById("title");
 console.log(h1);
 
-const user = {
+const title = "Liên Quân";
+h1.innerHTML = `Danh sác sản phẩm ${title}`;
+
+const student = {
     id: 1,
     name: 'Nguyễn Ngọc Thiện',
     age: 19,
     email: 'thien.nguyen@example.com',
     address: 'Hà Nội'
 };
-console.log(user);
-console.log("Họ tên:", user.name);
-console.log("Tuổi:", user.age);
-console.log("Email:", user.email);
-console.log("Địa chỉ:", user.address);
+console.log(student);
+console.log("Họ tên:", student.name);
+console.log("Tuổi:", student.age);
+console.log("Email:", student.email);
+console.log("Địa chỉ:", student.address);
+
