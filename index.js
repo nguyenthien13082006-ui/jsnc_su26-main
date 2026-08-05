@@ -13,25 +13,26 @@ let game = "Liên Quân";
 let year = 9;
 let isAdmin = true;
 console.log(game);
-
 // alert('Free Fire sống dai thành huyền thoại');
-
-const h1 = document.getElementById("title");
+const h1 = document.getElementById('title').innerHTML = "Danh sách vật phẩm";
 console.log(h1);
-
-const title = "Liên Quân";
-h1.innerHTML = `Danh sác sản phẩm ${title}`;
-
 const student = {
-    id: 1,
-    name: 'Nguyễn Ngọc Thiện',
-    age: 19,
-    email: 'thien.nguyen@example.com',
-    address: 'Hà Nội'
+    name: "Thiện",
+    age: 20,
+    isStudent: true,
 };
+h1.innerHTML = `Danh sách sinh viên: ${student.name} - ${student.age} tuổi`;
 console.log(student);
-console.log("Họ tên:", student.name);
-console.log("Tuổi:", student.age);
-console.log("Email:", student.email);
-console.log("Địa chỉ:", student.address);
+const book = {
+    title: "Lập trình PHP",
+    author: "Nguyễn Ngọc Thiện",
+    image: "",
+    year: 1999,
+};
 
+console.log(book);
+
+document.getElementById("title2").innerHTML = `${book.title}`;
+document.getElementById("title-author").innerHTML = `${book.author}`;
+document.getElementById("title-image").innerHTML = `${book.image}`;
+document.getElementById("title-year").innerHTML = `${book.year}`;
