@@ -101,11 +101,11 @@ const products = [
         price: 18000000,
     },
 ];
-const html = products.map((hi) => `
+const html = products.map((product) => `
 <tr class="hover:bg-gray-50">
-        <td class="px-4 py-2 border border-gray-300">${hi.id}</td>
-        <td class="px-4 py-2 border border-gray-300">${hi.name}</td>
-        <td class="px-4 py-2 border border-gray-300">${hi.price}</td>
+        <td class="px-4 py-2 border border-gray-300">${product.id}</td>
+        <td class="px-4 py-2 border border-gray-300">${product.name}</td>
+        <td class="px-4 py-2 border border-gray-300">${product.price}</td>
         <td class="px-4 py-2 border border-gray-300">
             <div class="flex items-center justify-center gap-2">
                 <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded">Edit</a>
