@@ -1,16 +1,19 @@
 {
-  "books": [
+  "students": [
     {
       "id": 1,
-      "title": "Nhà giả kim",
-      "year": 2000,
-      "cover": "https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_36793.jpg"
+      "name": "An",
+      "age": 20
     },
     {
       "id": 2,
-      "title": "Tôi thấy hoa vàng trên cỏ xanh",
-      "year": 2000,
-      "cover": "https://cdn0.fahasa.com/media/catalog/product/n/n/nna-hvtcx.jpg"
+      "name": "Bình",
+      "age": 21
+    },
+    {
+      "id": 3,
+      "name": "Chi",
+      "age": 22
     }
   ]
 }
