@@ -38,7 +38,7 @@
 // // document.getElementById("title-year").innerHTML = `${book.year}`;
 // document.getElementById("books").innerHTML = `
 
-// <tr class="hover:bg-gray-50">    
+//<tr class="hover:bg-gray-50">    
 //             <td class="px-4 py-2 border border-gray-300">${book.id}</td>
 //             <td class="px-4 py-2 border border-gray-300">${book.title}</td>
 //             <td class="px-4 py-2 border border-gray-300">${book.author}</td>
