@@ -22,6 +22,7 @@
 //     isStudent: true,
 // };
 // h1.innerHTML = `Danh sách sinh viên: ${student.name} - ${student.age} tuổi`;
+
 // console.log(student);
 // const book = {
 //     id: 1,
@@ -37,7 +38,6 @@
 // // document.getElementById("title-image").innerHTML = `${book.image}`;
 // // document.getElementById("title-year").innerHTML = `${book.year}`;
 // document.getElementById("books").innerHTML = `
-
 //<tr class="hover:bg-gray-50">    
 //             <td class="px-4 py-2 border border-gray-300">${book.id}</td>
 //             <td class="px-4 py-2 border border-gray-300">${book.title}</td>
@@ -45,12 +45,14 @@
 //             <td class="px-4 py-2 border border-gray-300">
 //               <div class="flex items-center justify-center gap-2">
 //                 <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded">Edit</a>
-
 //                 <button class="bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded">Delete</button>
 //               </div>
 //             </td>
 //           </tr>
 // `
+
+
+
 // const students = [
 //     {
 //         id: 1,
@@ -76,7 +78,6 @@
 //         <td class="px-4 py-2 border border-gray-300">
 //             <div class="flex items-center justify-center gap-2">
 //                 <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded">Edit</a>
-
 //                 <button class="bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded">Delete</button>
 //             </div>
 //         </td>
@@ -84,6 +85,9 @@
 // `,
 // ).join("");
 // document.getElementById("student-list").innerHTML = html;
+
+
+
 // const products = [
 //     {
 //         id: 1,
@@ -109,7 +113,6 @@
 //         <td class="px-4 py-2 border border-gray-300">
 //             <div class="flex items-center justify-center gap-2">
 //                 <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded">Edit</a>
-
 //                 <button class="bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded">Delete</button>
 //             </div>
 //         </td>
@@ -117,9 +120,11 @@
 // `,
 // ).join("");
 // document.getElementById("products").innerHTML = html;
+
+
+
 // Fecht
 // Axios
-
 axios.get("http://localhost:3000/students").then((res) => {
     console.log("cal API", res.data);
     const students = res.data;
@@ -132,7 +137,6 @@ axios.get("http://localhost:3000/students").then((res) => {
         <td class="px-4 py-2 border border-gray-300">
             <div class="flex items-center justify-center gap-2">
                 <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded">Edit</a>
-
                 <button class="bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded">Delete</button>
             </div>
         </td>
