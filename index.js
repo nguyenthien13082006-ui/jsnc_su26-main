@@ -125,25 +125,27 @@
 
 // Fecht
 // Axios
-axios.get("http://localhost:3000/students").then((res) => {
-    console.log("cal API", res.data);
-    const students = res.data;
-    document.getElementById("products").innerHTML = students.map((student) => {
-        return `
-<tr class="hover:bg-gray-50">
-        <td class="px-4 py-2 border border-gray-300">${student.id}</td>
-        <td class="px-4 py-2 border border-gray-300">${student.name}</td>
-        <td class="px-4 py-2 border border-gray-300">${student.age}</td>
-        <td class="px-4 py-2 border border-gray-300">
-            <div class="flex items-center justify-center gap-2">
-                <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded">Sửa</a>
-                <button onclick="deleteStudent(${student.id})" class="bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded">Xoá</button>
-            </div>
-        </td>
-    </tr>
-`;
-    }).join("");
-});
+// axios.get("http://localhost:3000/students").then((res) => {
+//     console.log("cal API", res.data);
+//     const students = res.data;
+//     document.getElementById("products").innerHTML = students.map((student) => {
+//         return `
+// <tr class="hover:bg-gray-50">
+//         <td class="px-4 py-2 border border-gray-300">${student.id}</td>
+//         <td class="px-4 py-2 border border-gray-300">${student.name}</td>
+//         <td class="px-4 py-2 border border-gray-300">${student.age}</td>
+//         <td class="px-4 py-2 border border-gray-300">
+//             <div class="flex items-center justify-center gap-2">
+//                 <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded">Sửa</a>
+//                 <button onclick="deleteStudent(${student.id})" class="bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded">Xoá</button>
+//             </div>
+//         </td>
+//     </tr>
+// `;
+//     }).join("");
+// });
+
+
 // function loadStudent() {
 //     axios.get("http://localhost:3000/students").then((res) => {
 //         const html = res.data.map(
@@ -164,11 +166,55 @@ axios.get("http://localhost:3000/students").then((res) => {
 //     });
 // }
 // loadStudent();
-function deleteStudent(id) {
-    const result = confirm("Bạn có chắc chắn muốn xóa không?");
-    if (result) {
-        axios.delete("http://localhost:3000/students").then(() => {
-            loadStudent();
-        });
+
+
+// function deleteStudent(id) {
+//     const result = confirm("Bạn có chắc chắn muốn xóa không?");
+//     // console.log(result);
+
+//     if (result) {
+//         axios.delete(`http://localhost:3000/students/${id}`).then(() => {
+//             loadStudent();
+//         });
+//     }
+// }
+
+
+const API_URL = "http://localhost:3000/students";
+const getStudents = () => {
+    axios.get(API_URL).then((res) => {
+        document.getElementById("products").innerHTML = res.data.map((item) => {
+            return `
+          <tr>
+            <td>${item.id}</td>
+            <td>${item.name}</td>
+            <td>${item.age}</td>
+            <td>${item.email}</td>
+            <td >
+                <button onclick="goToEdit('${item.id}')" class="bg-yellow-500 text-white px-2 py-1 rounded">Edit</button>
+                <button onclick="deleteStudent('${item.id}')" class="bg-red-500 text-white px-2 py-1 rounded">Xóa</button>
+            </td>
+        </tr>
+        `;
+        })
+            .join("");
+    })
+};
+
+const deleteStudent = (id) => {
+    if (confirm("Bạn có chắc chắn muốn xóa sinh viên này không?")) {
+        axios
+            .delete(`${API_URL}/${id}`)
+            .then((res) => {
+                alert("Xóa thành công!");
+                getStudents();
+            })
     }
+};
+
+getStudents();
+
+
+function goToEdit(id) {
+    window.location.href = `edit.html?id=${id}`;
 }

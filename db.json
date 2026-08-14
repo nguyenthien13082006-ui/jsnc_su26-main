@@ -1,19 +1,10 @@
 {
   "students": [
     {
-      "id": 1,
-      "name": "An",
-      "age": 20
-    },
-    {
-      "id": 2,
-      "name": "Bình",
-      "age": 21
-    },
-    {
-      "id": 3,
-      "name": "Chi",
-      "age": 22
+      "name": "Nguyễn Văn B",
+      "age": "21",
+      "email": "a@gmail.com",
+      "id": 1
     }
   ]
 }
