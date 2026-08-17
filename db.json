@@ -6,5 +6,17 @@
       "email": "a@gmail.com",
       "id": 1
     }
+  ],
+  "users": [
+    {
+      "email": "nguyenthien13082006@gmail.com",
+      "password": "$2a$10$JkfNUfOR2kadceWovTR3WuGsAjhEluWwfrr4.sI3n/DTCXYRAGPNa",
+      "id": 1
+    },
+    {
+      "email": "nguyenthien@gmail.com",
+      "password": "$2a$10$AtgEQjDJ7cSJ1AIRgbRVa.UeIxf2Lix0biE69Ytrn8XVzPKI6wJ9S",
+      "id": 2
+    }
   ]
 }

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="max-w-6xl mx-auto mt-10 px-4 text-center">
+        <form id="form-register" class="space-y-6">
+            <!-- Text input -->
+            <div>
+                <label for="title" class="block font-medium mb-1"></label>
+                <input id="email" type="email" placeholder="Email"
+                    class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+            </div>
+            <div>
+                <label for="title" class="block font-medium mb-1"></label>
+                <input id="password" type="password" placeholder="Mật khẩu"
+                    class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+            </div>
+            <!-- Buttons -->
+            <button type="submit" class="px-5 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
+                Đăng ký
+            </button>
+        </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js"></script>
+    <script src="register.js"></script>
+</body>
+
+</html>
